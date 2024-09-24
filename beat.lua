@@ -6,7 +6,7 @@ beat = {
 	sprite = 0,
 	count = 30,
 	reverb = 2,
-	x = 50,
+	x = 62,
 	y = 62,
 	cooldown = 0,
 	button = 5,
@@ -47,7 +47,7 @@ beat = {
 		elseif self.count == 0 then
 			self.x = self.x - 1
 			self.y = self.y + 3
-			sfx(beat.sound)
+			--sfx(beat.sound)
 		elseif self.count < 0 then
 			self.x = self.x + 1
 			self.reverb = 1 
@@ -60,4 +60,7 @@ beat = {
 	end
 }
 
-beat2 = beat:new({count = 29, x = 76, button = 4})
+beat1 = beat:new({x = 20, y = 20, button = 0})
+beat2 = beat:new({x = 20, y = 40, button = 2})
+beat3 = beat:new({x = 20, y = 60, button = 3})
+beat4 = beat:new({x = 20, y = 80, button = 1})
